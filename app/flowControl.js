@@ -12,6 +12,16 @@ flowControlAnswers = {
    * @returns {String} The string 'fizz', 'buzz', or 'fizzbuzz'
    */
   fizzBuzz: function fizzBuzz(num) {
-
+    let respose = num;
+    if(!Number.isInteger(num) || !num){
+      respose = false;
+    } if(num % 3 === 0 && num % 5 === 0){
+      respose = 'fizzbuzz';
+    } else if(num % 3 === 0){
+      respose = 'fizz';
+    } else if(num % 5 === 0){
+      respose = 'buzz';
+    } 
+    return respose;
   },
 };
