@@ -10,7 +10,7 @@ functionsAnswers = {
    * @returns Whatever fn would return
    */
   argsAsArray: function argsAsArray(fn, arr) {
-
+    return fn(arr[0], arr[1], arr[2]);
   },
 
   /**
@@ -27,6 +27,12 @@ functionsAnswers = {
    * that begins with str + ', ' + that 1 argument.
    */
   functionFunction: function functionFunction(str) {
-
+    let str2 = '';
+    const fnToReturn = (str) => {
+      str2 = str2 == '' ? str + ', ' : str2 + str
+      return str2;
+    }
+    fnToReturn(str);
+    return fnToReturn;
   },
 };
