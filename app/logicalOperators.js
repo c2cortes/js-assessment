@@ -9,7 +9,8 @@ logicalOperatorsAnswers = {
    * @returns {bool} True if either a, b, or both are true, false otherwise.
    */
   or: function or(a, b) {
-
+    const response = a || b ? true : false;
+    return response;
   },
 
   /**
@@ -22,6 +23,7 @@ logicalOperatorsAnswers = {
    * @returns {bool} True if either a and b are both true, false otherwise.
    */
   and: function and(a, b) {
-
+    const response = a && b ? true : false;
+    return response;
   }
 };
